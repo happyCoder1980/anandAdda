@@ -5,7 +5,6 @@
 using namespace std;
 
 const int DEFAULT_STACK_SIZE = 10000;
-const int DEFAULT_INSTANCE_LIMIT = 5;
 
 class eStack
 {
@@ -28,7 +27,7 @@ private:
 
 public:
 	//eStack(void);
-	static eStack* initStack();
+	static eStack* initStack(const int myStSize = DEFAULT_STACK_SIZE);
 	static void deleteStack();
 	void disableStackLimit();
 	bool push(string data2push);//use this to add to stack.

@@ -16,11 +16,11 @@ eStack::eStack(int stLimit)
 	stackLimitReached = false;//this means that we have reached the max no of stack elements possible.
 }
 
-eStack* eStack::initStack()
+eStack* eStack::initStack(const int myStSize)
 {
 	if (eStack::localSt == NULL)
 	{
-		eStack::localSt = new eStack(10);
+		eStack::localSt = new eStack(myStSize);
 	}
 	return localSt;
 }
